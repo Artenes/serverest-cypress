@@ -1,3 +1,9 @@
+/**
+ * Commands related to API calls
+ * 
+ * Instead of repeating API calls throughout the project, 
+ * just setup one here and call as many times you want
+ */
 const API_URL = 'https://serverest.dev'
 const apiUrl = () => API_URL
 
