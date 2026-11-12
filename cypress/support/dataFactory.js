@@ -8,10 +8,10 @@ const uniqueId = () => `${Date.now()}${Math.floor(Math.random() * 10000)}`
 export const buildUser = (overrides = {}) => {
   const id = uniqueId()
   return {
-    name: `QA User ${id}`,
+    nome: `QA User ${id}`,
     email: `qa.${id}@test.com`,
     password: 'Password@123',
-    isAdmin: true,
+    administrador: 'true',
     ...overrides,
   }
 }
@@ -19,10 +19,10 @@ export const buildUser = (overrides = {}) => {
 export const buildProduct = (overrides = {}) => {
   const id = uniqueId()
   return {
-    name: `QA Product ${id}`,
-    price: 150,
-    description: 'Product created by automation',
-    quantity: 10,
+    nome: `QA Product ${id}`,
+    preco: 150,
+    descricao: 'Product created by automation',
+    quantidade: 10,
     ...overrides,
   }
 }
